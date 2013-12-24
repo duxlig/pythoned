@@ -1,10 +1,10 @@
 import smtplib
-fromaddr='cruzarios@gmail.com'
-toaddr='cruzarios@gmail.com'
+fromaddr='jorge@ievolutioned.com'
+toaddr='bensandsower@gmail.com'
 
 msg = "\r\n".join([
-  "From: user_me@gmail.com",
-  "To: user_you@gmail.com",
+  "From: jorge@ievolutioned.com",
+  "To: bensandsower@gmail.com",
   "Subject: Just a message",
   "",
   "Why, oh why"
@@ -13,7 +13,7 @@ msg = "\r\n".join([
 
 username='jorge@ievolutioned.com'
 password='Pasion8576'
-server=smtplib.SMTP('smtp.gmail.com:465')
+server=smtplib.SMTP('smtp.gmail.com:587')
 server.ehlo()
 server.starttls()
 server.login(username,password)
